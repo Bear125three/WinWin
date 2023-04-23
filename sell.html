@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinWin - Sell Items</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            color: white;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .sell-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        .sell-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sell-container label {
+            font-weight: bold;
+        }
+
+        .sell-container input, select, textarea {
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .sell-container button {
+            background-color: #3d3d3d;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+
+        .sell-container button:hover {
+            background-color: #5d5d5d;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse Items</a>
+        <a href="sell.html">Sell Items</a>
+        <a href="how.html">How it Works</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <section class="sell-container">
+        <h2>List your item for sale</h2>
+        <form>
+            <label for="item-name">Item Name</label>
+            <input type="text" id="item-name" placeholder="Enter item name">
+
+            <label for="item-description">Item Description</label>
+            <textarea id="item-description" rows="4" placeholder="Enter item description"></textarea>
+
+            <label for="item-image">Upload Item Image</label>
+            <input type="file" id="item-image">
+
+            <label for="item-category">Select Category</label>
+            <select id="item-category">
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+                <!-- Add more categories as needed -->
+            </select>
+
+            <label for="item-price">Desired Selling Price</label>
+            <input type="number" id="item-price" placeholder="Enter desired selling price">
+
+            <button type="submit">List Item for Sale</button>
+        </form>
+    </section>
+</body>
+</html>
